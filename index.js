@@ -39,10 +39,10 @@ xhr.onload = function () {
         newsAccordion.innerHTML = newsHtml;
     }
     else {
-        console.log("Some error occured")
+        console.log("Error to Console  !!! ")
     }
 }
 
-xhr.send()
+xhr.send();
 
 
