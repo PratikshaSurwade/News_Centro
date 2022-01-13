@@ -1,8 +1,7 @@
 console.log("This is my index js file");
 
 // Initialize the news api parameters
-// let source = 'the-times-of-india';
-// let apiKey = '55f9f9b698ee412c88a4a35a13e328e4';
+
 
 // Grab the news container
 let newsAccordion = document.getElementById('newsAccordion');
@@ -44,44 +43,3 @@ xhr.onload = function () {
 }
 
 xhr.send();
-
-/*
-state={
-    postList:[],
-}
-componentDidMount(){
-    axioms.get("https://jsonplaceholder.typicode.com/todos")
-    .then((response)=>{
-        console.log(response.data);
-        this.setState({
-            postList: response.data,
-        })
-
-    })
-    .catch((error)=>
-        console.log(error))
-        console.log("fetching data")
-}
-render(){
-    return(
-        <>
-            <h1>App</h1>
-            {this.state.postList.map(
-                (item)=>(
-                    <div key={item.id}>
-                        <h3>{item.userId}</h3>
-                        <h4>{item.id}</h4>
-                        <p>{item.title}</p>
-                        <h6>{item.completed}</h6>
-
-                    </div>
-                )
-            )}
-        </>
-    )
-}
-}
-
-export default App;
-
-*/
