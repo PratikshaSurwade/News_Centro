@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@600&family=Josefin+Sans:ital,wght@0,100;0,400;0,500;1,600;1,700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Permanent+Marker&family=Piazzolla:ital,wght@0,200;0,300;0,500;0,900;1,200&family=Varela&family=Varela+Round&display=swap');
+
+
+.cards-Container{
+    margin-top: 2rem;
+    display: flex;
+    margin-left: 0rem;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: auto;
+}
+/************
+
+font-family: 'Abril Fatface', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Piazzolla', serif;
+font-family: 'Varela', sans-serif;
+font-family: 'Varela Round', sans-serif;
+
+
+****************/
+
+.card{
+    width: 20rem;
+    height: 30rem;
+    text-align: center;
+    margin: 1.25rem 1.5rem 2rem 1.5rem;
+    border: 1px solid gray;
+    border-radius: 0.4375rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885,0,1);
+    box-shadow: 0.125rem 0.25rem 0.375rem rgb(197, 195, 195);
+    position: relative;
+}
+.imaGe{
+    width: 20rem;
+    height: 10rem;
+    border-top-left-radius: 0.4375rem;
+    border-top-right-radius: 0.4375rem;
+}
+.cardInfo{
+    margin : 1rem 1rem;
+}
+.cardInfo h5 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color :purple;
+}
+.cardInfo > p,span {
+    color: #d3d3d3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}

@@ -1,45 +1,37 @@
-console.log("This is my index js file");
 
-// Initialize the news api parameters
+var url = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=55f9f9b698ee412c88a4a35a13e328e4';
 
+let fetchBtn = document.getElementById('fetchBtn');
 
-// Grab the news container
-let newsAccordion = document.getElementById('newsAccordion');
+let newsHtml = "";
 
-// Create an ajax get request
-const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=the-times-of-india&apiKey=55f9f9b698ee412c88a4a35a13e328e4`, true);
+console.log("sab kuch good hai");
+fetchBtn.addEventListener("click", getData);
 
-// What to do when response is ready
-xhr.onload = function () {
-    if (this.status === 200) {
-        let json = JSON.parse(this.responseText);
-        let articles = json.articles;
-        console.log(articles);
-        let newsHtml = "";
-        articles.forEach(function(element, index) {
-            // console.log(element, index)
+function getData(e) {
+
+    e.preventDefault();
+    fetch(url).then((response) => {
+        return response.json()
+    }).then((data) => {
+        console.log(data);
+        data.articles.forEach(articles => {
+
             let news = `<div class="card">
-                            <div class="card-header" id="heading${index}">
-                                <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse${index}"
-                                    aria-expanded="false" aria-controls="collapse${index}">
-                                   <b>Breaking News ${index+1}:</b> ${element["title"]}
-                                </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapse${index}" class="collapse" aria-labelledby="heading${index}" data-parent="#newsAccordion">
-                                <div class="card-body"> ${element["content"]}. <a href="${element['url']}" target="_blank" >Read more here</a>  </div>
-                            </div>
-                        </div>`;
+                        <img  class="imaGe" src="${articles.urlToImage}" alt="Imageshow"/>
+                        <div class="cardInfo">
+                        <h5>${articles.title}</h5>
+                        <hr>
+                        <p style={{color:"#d3d3d3"}}>${articles.content}</p>
+                        <span  class="postThumbnail">Travel</span>
+                        <span class="date"><code>   </code>/<code>   </code>${articles.publishedAt}</span>
+                        </div>
+                    </div>
+                `;
             newsHtml += news;
-        });
+        })
         newsAccordion.innerHTML = newsHtml;
-    }
-    else {
-        console.log("Error to Console  !!! ")
-    }
+    }).catch((err) => {
+        console.log(err, "error hai jana");
+    })
 }
-
-xhr.send();
