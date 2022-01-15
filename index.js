@@ -22,9 +22,11 @@ function getData(e) {
                         <div class="cardInfo">
                         <h5>${articles.title}</h5>
                         <hr>
-                        <p style={{color:"#d3d3d3"}}>${articles.content}</p>
-                        <span  class="postThumbnail">Travel</span>
-                        <span class="date"><code>   </code>/<code>   </code>${articles.publishedAt}</span>
+                        <p style={{color:"#d3d3d3"}}>${articles.description}</p>
+                        
+                            <span class="postThumbnail1">${articles.author}</span>
+                            <span class="postThumbnail2">${articles.publishedAt}</span>
+                        
                         </div>
                     </div>
                 `;

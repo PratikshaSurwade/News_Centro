@@ -24,7 +24,9 @@ font-family: 'Varela Round', sans-serif;
 
 
 ****************/
-
+.navbar {
+    background-color: rgb(226, 110, 43);
+}
 .card{
     width: 20rem;
     height: 30rem;
@@ -45,16 +47,41 @@ font-family: 'Varela Round', sans-serif;
 .cardInfo{
     margin : 1rem 1rem;
 }
+.cardInfo > hr {
+    margin: 0.2rem;
+    color: #d3d3d3;
+}
 .cardInfo h5 {
     font-family: 'Be Vietnam Pro', sans-serif;
     color :purple;
 }
-.cardInfo > p,span {
-    color: #d3d3d3;
+.cardInfo > p {
+    color: gray;
+    margin-top: 1rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* number of lines to show */
-            line-clamp: 2; 
+    -webkit-line-clamp: 4;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
+}
+
+/* .postThumbnail {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.75rem;
+} */
+.postThumbnail1{
+    color: #d3d3d3;
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.75rem;
+    left: 10px;
+}
+.postThumbnail2{
+    color : #d3d3d3;
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.75rem;
+    right: 10px;
 }
