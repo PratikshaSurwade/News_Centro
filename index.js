@@ -1,16 +1,13 @@
 
 var url = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=55f9f9b698ee412c88a4a35a13e328e4';
 
-let fetchBtn = document.getElementById('fetchBtn');
-
 let newsHtml = "";
 
 console.log("sab kuch good hai");
-fetchBtn.addEventListener("click", getData);
 
-function getData(e) {
+function getData() {
 
-    e.preventDefault();
+    // e.preventDefault();
     fetch(url).then((response) => {
         return response.json()
     }).then((data) => {
@@ -20,7 +17,7 @@ function getData(e) {
             let news = `<div class="card">
                         <img  class="imaGe" src="${articles.urlToImage}" alt="Imageshow"/>
                         <div class="cardInfo">
-                        <h5>${articles.title}</h5>
+                        <h6>${articles.title}</h6>
                         <hr>
                         <p style={{color:"#d3d3d3"}}>${articles.description}</p>
                         
@@ -37,3 +34,5 @@ function getData(e) {
         console.log(err, "error hai jana");
     })
 }
+
+getData();
