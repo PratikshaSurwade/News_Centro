@@ -12,7 +12,18 @@
     align-content: center;
     margin: auto;
 }
+/************
 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Piazzolla', serif;
+font-family: 'Varela', sans-serif;
+font-family: 'Varela Round', sans-serif;
+
+
+****************/
 .navbar {
     background-color: rgb(43, 76, 226);
 }
@@ -58,7 +69,21 @@
     line-clamp: 2;
     -webkit-box-orient: vertical;
     line-height: 1.2em;
+    /*position: relative;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;  (Number of lines you want visible) * (line-height) 
+    line-height: 1.2em;
+    text-align:justify; */
 }
+
+/* .postThumbnail {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.75rem;
+} */
+
 .postThumbnail1{
     color: #d3d3d3;
     position: absolute;
