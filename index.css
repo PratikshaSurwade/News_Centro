@@ -43,6 +43,7 @@ font-family: 'Varela Round', sans-serif;
     height: 8rem;
     border-top-left-radius: 0.4375rem;
     border-top-right-radius: 0.4375rem;
+    cursor: pointer;
 }
 .cardInfo{
     margin : 1rem 1rem;
@@ -54,6 +55,7 @@ font-family: 'Varela Round', sans-serif;
 .cardInfo h6 {
     font-family: 'Be Vietnam Pro', sans-serif;
     color :rgb(43, 76, 226);
+    cursor: pointer;
 }
 .cardInfo > p {
     font-size: 0.75rem;

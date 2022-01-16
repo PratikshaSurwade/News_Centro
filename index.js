@@ -17,7 +17,7 @@ function getData() {
             let news = `<div class="card">
                         <img  class="imaGe" src="${articles.urlToImage}" alt="Imageshow"/>
                         <div class="cardInfo">
-                        <h6>${articles.title}</h6>
+                        <h6><a href="${articles.url}" target="_blank" title="Read the full article">${articles.title}</a></h6>
                         <hr>
                         <p style={{color:"#d3d3d3"}}>${articles.description}</p>
                         
