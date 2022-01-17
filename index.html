@@ -13,7 +13,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#">News Hub for Nation</a>
+    <a class="navbar-brand" href="/"><span class="centralName">News Centro</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -21,19 +21,26 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container">
-    <h3>
-      Top News
-      <span class="badge badge-secondary">News Hub for Nation</span>
-    </h3>
+  <div class="containerrr" >
+    
     <hr />
-    <div class="cards-Container" id="newsAccordion"></div>
+    <div class="main-box">
+      <div class="cards-Container" id="newsAccordion"></div>
+      <div class="sideBar" id="sidebarState">
+        <h3>
+          Top News <span class="badge badge-primary">News Hub for Nation</span>
+          <div class="topnewsContainer" id="topnewsAccordion"></div>
+        </h3>
+      </div>
+
+    </div>
+    
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
