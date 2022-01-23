@@ -1,7 +1,7 @@
 
-var url1 = 'https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=55f9f9b698ee412c88a4a35a13e328e4';
+var url2 = 'https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=55f9f9b698ee412c88a4a35a13e328e4';
 
-var url2 = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=55f9f9b698ee412c88a4a35a13e328e4';
+var url1 = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=55f9f9b698ee412c88a4a35a13e328e4';
    
 let newsHtml = "";
 
