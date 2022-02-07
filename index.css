@@ -9,13 +9,18 @@
 
 .centralName{
     
+    /* transform: rotate(360deg); */
     color :white;
     font-family: 'Permanent Marker', cursive;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 2.5rem;
     text-shadow: .2rem .15rem brown;
+    animation : mytitle 3s;
+    animation-iteration-count: infinite;
 }
-
+@keyframes mytitle {
+    transform: rotateX(angleValue)
+}
 
 .sideBar{
     flex: 3;
