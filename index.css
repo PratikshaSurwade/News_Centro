@@ -80,7 +80,7 @@ font-family: 'Varela Round', sans-serif;
 
 .card{
     width: 15rem;
-    height: 22rem;
+    /* height: 18rem; */
     text-align: center;
     margin: 0.5rem 1rem 0.5rem 1rem;
     border: 1px solid gray;
